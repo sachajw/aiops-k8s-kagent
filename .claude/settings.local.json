@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -s -m \"$\\(cat <<''EOF''\nfeat\\(aiops\\): add Kagent AI agent framework deployment\n\n- Add HelmRelease for kagent-crds and kagent charts from OCI registry\n- Configure Ollama provider to use existing LocalAI backend\n- Enable k8s, promql, observability, and helm agents\n- Add BitwardenSecrets for OpenAI and Anthropic API keys\n- Configure node affinity for NVMe nodes \\(pi07-09\\)\n- Rename manifest files to consistent naming convention\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push)",
+      "Bash(kubectl describe pod pgadmin4-597c955bbb-dbc2t -n dops-systems)"
+    ]
+  }
+}
